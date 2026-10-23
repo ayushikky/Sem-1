@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<style>
+    /* ancestor combinator */
+    .c1 .c2 {
+        color: blue;
+    }
+    /* parent combinator  */
+    .c1>div>div>span>.c2 {
+        background-color: lightgreen;
+    }
+</style>
+
+<body>
+    <div class="c1">
+        <div>
+            <div>
+                <span>
+                    <div class="c2">I'm here.</div>
+                </span>
+            </div>
+        </div>
+        <span>
+            <div class="c2">Dont select me</div>
+        </span>
+    </div>
+
+</body>
+
+</html>

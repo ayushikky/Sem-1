@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, blue, purple);
+    color: white;
+    line-height: 1.6;
+
+}
+.navbar{
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    backdrop-filter: blur(10px);
+
+   
+}
+.nav-head{
+    font-size:30px;
+    font-weight: bold;
+}
+.nav-links{
+    color:aquamarine;
+   
+    color:rgb(59,72,84); 
+    gap: 30px;
+    display: flex;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-link a :hover{
+    color: gold;
+}
+.sec-1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 50px 60px;
+
+}
+
+.home-content{
+flex: 1;
+}
+.profile-title{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+profile_subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.highlight{
+    color: gold;
+}
+.btn-hero{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: linear-gradient(90deg, red, pink);
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: grab;
+    transition: transform 0.3 ease;
+}
+.Home-image{
+    height: 320px;
+    width: 320px;
+    overflow: hidden;
+}
+.Home-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+}

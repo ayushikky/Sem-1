@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --main-color: rgb(143, 48, 48);
+            --secondary-color: lightcoral;
+            --text: rgb(13, 2, 4);
+            --spacing: 25px;
+            --radius: 5px;
+            --fonts: 'Helvetica', sans-serif;
+        }
+        body{
+            font-family: var(--fonts);
+            padding:var(--spacing);
+            color: var(--text);
+        }
+        button{
+            background-color: var(--main-color);
+            color: rgb(248, 248, 248);
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            border:none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: var(--secondary-color);
+        }
+        .card{
+            background-color: var(--main-color);
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            margin-top: var(--spacing);
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+     <div class="card">
+        <h2>Name Title</h2>
+        <p>
+            This name uses the same variableas the button.
+        </p>
+     </div>
+</body>
+</html>
